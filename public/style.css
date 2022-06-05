@@ -1,0 +1,18 @@
+:root {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  --text-primary: #000000;
+  --text-secondary: #ffffff;
+  --text-highlighter: #ffd234;
+  --bg-primary: #ffffff;
+  --bg-secondary: #000000;
+  --bg-highlighter: #ffd234;
+  --transition-speed: 700ms;
+}
+
+body {
+  color: var(--text-secondary);
+  background-color: var(--bg-secondary);
+  margin: 0;
+  padding: 0;
+}
