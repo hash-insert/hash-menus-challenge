@@ -1,4 +1,4 @@
-# Hash Menus Challenges
+# Hash Menus Challenges!
 
 This challenge expects to create a webpage with a side menu and a top navigation menu. Both menus should be responsive.
 
