@@ -16,3 +16,114 @@ body {
   margin: 0;
   padding: 0;
 }
+
+
+.hamburger-menu {
+  display: none;
+}
+
+/* this is top bar css */
+.topbar {
+  position: fixed;
+  justify-content: center;
+  height: 5rem;
+  width: 100vw;
+  top: 0;
+  right: 0;
+  background-color: var(--bg-primary)
+}
+
+.topbar-menu {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+
+
+}
+
+.topbar-menu-link {
+  text-decoration: none;
+  padding: 50px;
+
+}
+
+.topbar-menu-link-text:hover {
+  color: #ffffff;
+}
+
+.topbar a:hover {
+  transition: 0.5s;
+  background-color: black;
+}
+
+/* this is side bar css */
+.sidebar {
+  position: fixed;
+        
+  height: 100vh;
+  background-color:var(--text-highlighter)
+}
+
+.sidebar:hover {
+  
+  width: 15rem;
+  background-color:green;
+}
+.sidebar-menu-link-text:hover{
+color:black;
+}
+.sidebar-menu {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+}
+
+.sidebar-menu-link {
+  color: var(--text-secondary);
+  height: 5rem;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+
+
+}
+
+.sidebar-menu-link svg {
+  width: 2rem;
+
+}
+
+/* .sidebar-menu-item:last-child{
+  margin-top: auto;
+} */
+
+
+
+
+
+/* this is scroll bar css */
+
+body::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: yellow;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: yellow;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: orangered;
+}
+
+h1,
+h3 {
+  color: #ffd234;
+
+}
