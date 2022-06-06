@@ -35,15 +35,13 @@ body::-webkit-scrollbar-thumb{
 .hamburger-menu {
   display: none;
 }
-
+/* top bar */
 .topbar {
   top:0;
   height: 5rem;
   width: 100vw;
   position: fixed;
   background-color: var(--bg-primary);
-
-
 } 
 .topbar-menu{
   display: flex;
@@ -77,7 +75,7 @@ body::-webkit-scrollbar-thumb{
   
 }
   
-
+/* side bar */
 
 .sidebar {
   
@@ -177,7 +175,7 @@ body::-webkit-scrollbar-thumb{
   left: 0.5rem;
 }
 
-
+/* media queries for small */
 
 @media only screen and (max-width: 600px){
   .sidebar {
@@ -226,6 +224,8 @@ body::-webkit-scrollbar-thumb{
   width: 10rem;
 }
 }
+
+/* media quires for large */
 @media only screen and (min-width: 600px){
   .sidebar {
     top: 0;
