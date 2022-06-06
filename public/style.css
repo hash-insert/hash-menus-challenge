@@ -57,48 +57,132 @@ body {
 }
 
 /* this is side bar css */
-.sidebar {
+ .sidebar {
+  width:2rem;
   position: fixed;
-        
+  top: 0;     
   height: 100vh;
-  background-color:var(--text-highlighter)
+  background-color:var(--text-secondary) 
 }
 
-.sidebar:hover {
+ .sidebar:hover{
   
-  width: 15rem;
-  background-color:green;
-}
-.sidebar-menu-link-text:hover{
-color:black;
-}
+  transition: all 0.6s ease;
+  width: 12rem;
+  background-color:greenyellow;
+} 
 .sidebar-menu {
   display: flex;
+  font-size: 20px;
   list-style: none;
   flex-direction: column;
   margin: 0;
   padding: 0;
+  height: 100%;
+  
 
 }
+.sidebar:hover .sidebar-menu-link-text{
+  display: inline;
+  
+  margin-left: 2rem;
+  color:black;
+  
+}
 
+
+
+.sidebar-menu-link-text{
+  display: none;
+}
 .sidebar-menu-link {
+ 
   color: var(--text-secondary);
   height: 5rem;
   display: flex;
   text-decoration: none;
-  align-items: center;
-
-
-}
-
-.sidebar-menu-link svg {
-  width: 2rem;
-
-}
-
-/* .sidebar-menu-item:last-child{
+  align-items: center; 
+} 
+ .sidebar-menu-item:last-child{
   margin-top: auto;
-} */
+} 
+.sidebar-menu-link:hover svg {
+  
+  fill: var(--bg-highlighter);
+  background-color: var(--bg-secondary);
+  color:(var(--text-secondary))
+  }
+.logo-text{
+margin-right: 2rem;
+}
+
+
+
+
+
+
+/* this is other css */
+
+/* .sidebar {
+  position: fixed;
+  background-color: #FCF8F8;
+  width: 5rem;
+  height: 100vh;
+  transition:all 1s;
+  top: 0;
+  left: 0;
+}
+.sidebar-menu{
+  display: flex;
+  color: rgb(113, 177, 177);
+  font-size: 20px;
+  flex-direction:column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.sidebar-menu-link{
+  color: #0C0B0C;
+  height: 5rem;
+  text-decoration: none;
+  display: flex;
+ align-items: center;
+}
+.sidebar-menu-item:last-child{
+ margin-top: auto;
+}
+.sidebar-menu-link svg {
+   width: 2rem;
+   margin-left: 1.5rem;
+   margin-right: 1.5rem;
+}
+.sidebar-menu-link:hover svg {
+fill: var(--bg-highlighter);
+background-color: var(--bg-secondary);
+color:(var(--text-secondary))
+}
+.sidebar:hover .sidebar-menu-link-text{
+ display: inline;
+}
+.sidebar:hover{
+ width: 15rem;
+ background-color: #F1B0C4;
+}
+.sidebar-menu-link-text {
+ display: none;
+} 
+ */
+
+
+
+
+
+
+
+ 
+
+
+
 
 
 
@@ -122,6 +206,7 @@ body::-webkit-scrollbar-thumb:hover {
   background: orangered;
 }
 
+/* this is content css */
 h1,
 h3 {
   color: #ffd234;
