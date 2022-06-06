@@ -16,3 +16,19 @@ body {
   margin: 0;
   padding: 0;
 }
+
+h1,h3 {
+  color: var(--text-highlighter);
+}
+
+body::-webkit-scrollbar {
+   width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+   background: var(--bg-primary);
+}
+
+body::-webkit-scrollbar-thumb {
+background: var(--bg-highlighter);   
+}
