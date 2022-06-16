@@ -59,8 +59,7 @@ header {
   color: #000204;
   text-decoration: none;
   letter-spacing: 0.05em;
-  height: 4rem;
-  width: 5rem;
+
 }
 .nav1 ul li a:hover, .nav1 ul li a:focus {
   background-color: #000000;
