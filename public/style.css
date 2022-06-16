@@ -60,10 +60,11 @@ body {
  .sidebar {
   width:2rem;
   position: fixed;
-  top: 0;     
+     top: 0;
   height: 100vh;
   background-color:var(--text-secondary) 
 }
+
 
  .sidebar:hover{
   
@@ -82,12 +83,23 @@ body {
   
 
 }
+
+
+
 .sidebar:hover .sidebar-menu-link-text{
   display: inline;
   
   margin-left: 2rem;
   color:black;
   
+}
+.logo svg{
+  transform: rotate(0deg);
+  transition: var(--transition-speed);
+}
+.sidebar:hover .logo svg{
+  transform: rotate(-180deg);
+
 }
 
 
@@ -112,66 +124,24 @@ body {
   background-color: var(--bg-secondary);
   color:(var(--text-secondary))
   }
+  .sidebar-menu-item:hover{
+background-color: aqua;
+  }
+ 
 .logo-text{
 margin-right: 2rem;
 }
-
-
-
-
-
-
-/* this is other css */
-
-/* .sidebar {
-  position: fixed;
-  background-color: #FCF8F8;
-  width: 5rem;
-  height: 100vh;
-  transition:all 1s;
-  top: 0;
-  left: 0;
-}
-.sidebar-menu{
-  display: flex;
-  color: rgb(113, 177, 177);
-  font-size: 20px;
-  flex-direction:column;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-.sidebar-menu-link{
-  color: #0C0B0C;
-  height: 5rem;
-  text-decoration: none;
-  display: flex;
- align-items: center;
-}
-.sidebar-menu-item:last-child{
- margin-top: auto;
-}
-.sidebar-menu-link svg {
-   width: 2rem;
-   margin-left: 1.5rem;
-   margin-right: 1.5rem;
-}
-.sidebar-menu-link:hover svg {
-fill: var(--bg-highlighter);
-background-color: var(--bg-secondary);
-color:(var(--text-secondary))
-}
-.sidebar:hover .sidebar-menu-link-text{
- display: inline;
-}
-.sidebar:hover{
- width: 15rem;
- background-color: #F1B0C4;
-}
-.sidebar-menu-link-text {
- display: none;
+main{
+  margin-left: 3rem;
+margin-top: 5rem;
 } 
- */
+
+
+
+
+
+
+
 
 
 
