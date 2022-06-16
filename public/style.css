@@ -44,17 +44,28 @@ header {
   width: 100%;
 }
 
+.nav1 ul {
+  list-style-type: none;
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.nav1 ul li {
+  padding: 0 15px;
+}
 .nav1 ul li a {
   display: inline-block;
-  padding: 20px;
+  padding: 12px;
   color: #000204;
   text-decoration: none;
   letter-spacing: 0.05em;
+  height: 4rem;
+  width: 5rem;
 }
 .nav1 ul li a:hover, .nav1 ul li a:focus {
   background-color: #000000;
   border-radius: 5px;
-  color: #ebee2c;
+  color: #eef448;
 }
 #checkbox {
   display: none;
@@ -84,7 +95,6 @@ header {
       padding-left: 20px;
   }
 }
-
 @media only screen and (max-width: 600px){
   .fa-bars:before {
     content: "\f0c9";
@@ -213,7 +223,7 @@ main {
   transform: rotate(-180deg);
 }
 
-/* Small screens */
+
 @media only screen and (max-width: 600px) {
   .navbar {
     bottom: 0;
