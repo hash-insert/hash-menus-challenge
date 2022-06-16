@@ -43,14 +43,7 @@ header {
   left:0;
   width: 100%;
 }
-.fa-bars:before {
-  content: "\f0c9";
-  color: #000000;
-  position: absolute;
-  
-  top: 15px;
-  right: 10px;
-}
+
 .nav1 ul {
   list-style-type: none;
   max-height: 0px;
@@ -100,7 +93,18 @@ header {
       padding-left: 20px;
   }
 }
+@media only screen and (max-width: 600px){
+  .fa-bars:before {
+    content: "\f0c9";
+    color: #000000;
+    position: absolute;
+    
+    top: 15px;
+    right: 10px;
+    margin-top: 10px ;
+  } 
 
+}
 
 h1, h3{
   color: #fff025;
@@ -217,7 +221,7 @@ main {
   transform: rotate(-180deg);
 }
 
-/* Small screens */
+
 @media only screen and (max-width: 600px) {
   .navbar {
     bottom: 0;
