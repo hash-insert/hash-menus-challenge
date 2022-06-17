@@ -16,3 +16,69 @@ body {
   margin: 0;
   padding: 0;
 }
+.topbar{
+  background-color: var(--bg-primary);
+  margin-top: 0;
+  height: 5rem;
+  position: fixed;
+  width: 100%;
+}
+.topbar-menu{
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  width: 100%;
+  font-size: large;
+  list-style-type: none;
+  padding: 0%;
+  margin: 0%;
+}
+.topbar-menu-item{
+  width: 12%;
+}
+.topbar-menu-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary);
+  text-decoration: none;
+  height: 5rem;
+}
+h1,h3{
+  color: var(--text-highlighter);
+}
+.hamburger-menu{
+  display: none;
+}
+.sidebar{
+  width: 5rem;
+  height: 100vh;
+}
+.sidebar-menu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  list-style-type: none;
+}
+
+.sidebar-menu-link{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: 6rem;
+  color: var(--text-primary);
+}
+.sidebar-menu-link-text{
+  display: none;
+  margin-left: 2rem;
+}
+body::-webkit-scrollbar{
+  width: 0.3rem;
+}
+body::-webkit-scrollbar-track{
+  background-color: var(--bg-primary);
+}
+body::-webkit-scrollbar-thumb{
+  background-color: var(--bg-highlighter);
+}
