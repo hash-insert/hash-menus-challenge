@@ -16,3 +16,169 @@ body {
   margin: 0;
   padding: 0;
 }
+
+
+.hamburger-menu {
+  display: none;
+}
+
+/* this is top bar css */
+.topbar {
+  position: fixed;
+  justify-content: center;
+  height: 5rem;
+  width: 100vw;
+  top: 0;
+  right: 0;
+  background-color: var(--bg-primary)
+}
+
+.topbar-menu {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+
+
+}
+
+.topbar-menu-link {
+  text-decoration: none;
+  padding: 50px;
+
+}
+
+.topbar-menu-link-text:hover {
+  color: #ffffff;
+}
+
+.topbar a:hover {
+  transition: 0.5s;
+  background-color: black;
+}
+
+/* this is side bar css */
+ .sidebar {
+  width:2rem;
+  position: fixed;
+     top: 0;
+  height: 100vh;
+  background-color:var(--text-secondary) 
+}
+
+
+ .sidebar:hover{
+  
+  transition: all 0.6s ease;
+  width: 12rem;
+  background-color:greenyellow;
+} 
+.sidebar-menu {
+  display: flex;
+  font-size: 20px;
+  list-style: none;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  
+
+}
+
+
+
+.sidebar:hover .sidebar-menu-link-text{
+  display: inline;
+  
+  margin-left: 2rem;
+  color:black;
+  
+}
+.logo svg{
+  transform: rotate(0deg);
+  transition: var(--transition-speed);
+}
+.sidebar:hover .logo svg{
+  transform: rotate(-180deg);
+
+}
+
+
+
+.sidebar-menu-link-text{
+  display: none;
+}
+.sidebar-menu-link {
+ 
+  color: var(--text-secondary);
+  height: 5rem;
+  display: flex;
+  text-decoration: none;
+  align-items: center; 
+} 
+ .sidebar-menu-item:last-child{
+  margin-top: auto;
+} 
+.sidebar-menu-link:hover svg {
+  
+  fill: var(--bg-highlighter);
+  background-color: var(--bg-secondary);
+  color:(var(--text-secondary))
+  }
+  .sidebar-menu-item:hover{
+background-color: aqua;
+  }
+ 
+.logo-text{
+margin-right: 2rem;
+}
+main{
+  margin-left: 3rem;
+margin-top: 5rem;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+/* this is scroll bar css */
+
+body::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: yellow;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: yellow;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: orangered;
+}
+
+/* this is content css */
+h1,
+h3 {
+  color: #ffd234;
+
+}
